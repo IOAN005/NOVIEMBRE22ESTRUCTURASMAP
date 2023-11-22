@@ -1,17 +1,22 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+package com.corenetworks.presentacion;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //polimorfismo
+        Map tabla =new HashMap();
+        tabla.put("21233333n","Juan Lopez");
+        System.out.println(tabla);
+        tabla.put("212v","Laura perez");
+        System.out.println("obteber el nombre de dni 2133333n " +tabla.get("21233333n"));
+        System.out.println("obteber el nombre de dni 212v " +tabla.get("212v"));
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println(tabla.values());
+        System.out.println(tabla.keySet());
+        System.out.println(tabla.entrySet());
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
     }
 }
